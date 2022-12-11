@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDCSP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NDCSP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gt.html">Grantees</a>
+              </li>
+              <li class="nav-item">
+                <!--Leaving blank to be filled in later-->
+                <a class="nav-link" href="#">TECs</a>
+              </li>
+            </ul>
+
+            </div>
+        </div>
+      </nav>
+    <!-- Main-->
+      <main class="container-fluid p-3 text-center text-uppercase">
+       <span class="text-primary">Department of Behavioral Health</span> 
+        <h1 class="modal-title fs-3" id="ModalLabel">National Data Coordinator Service Portal</h1>
+        <img class="img-fluid mb-3" src="OIP.jfif" alt="Health">          
+        <div class="col-sm-12 col-md-12 text-left">
+            <!--Accordian -->
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Division of Behavioral Health
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <strong>The Division of Behavioral Health</strong>  (DBH) Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam doloribus tempore expedita perferendis veniam quidem at optio suscipit nulla labore voluptate magni unde, tenetur error sequi debitis voluptates soluta illum!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Mental Health
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <!--Group List-->
+                        The goal :
+                        <ul class="list-group">
+                            <li class="list-group-item disabled" aria-disabled="true">Manage, develop, and coordinate comprehensive clinical, preventive, and community-based programs and policies related to mental health;</li>
+                            <li class="list-group-item">Provide, develops, and implements IHS guidelines, standards, policies, and procedures for professional and program standards related to mental health.</li>
+                            <li class="list-group-item">Monitor, measure, and evaluate the quality of behavioral health programs;</li>
+                            <li class="list-group-item">Develop and disseminate IHS mental health program information and materials to I/T/Us. Coordinates and collaborates with other DBH professionals on mental health related topics to develop a comprehensive approach to behavioral health;</li>
+                            <li class="list-group-item">Coordinate behavioral health professional staff recruitment, resources, technical assistance and training needs; and</li>
+                            <li class="list-group-item">To serve as a subject matter expert on mental health technical assistance, resources and training for the Behavioral Health Aide program.</li>
+ 
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Initiatives 
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <strong>Testing .</strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae est maxime earum totam atque qui eos odio in eaque? Dolorum omnis quia, harum dolore dignissimos et quos labore dolorem ad.  
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+            Request TA
+        </button>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="ModalLabel">Please enter</h1>
+           
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="FormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="FormControlTextarea1" class="form-label">Description of TA needed</label>
+                    <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                  </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
